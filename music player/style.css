@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+    }
+    
+    
+    .maincont{
+    position: relative;    
+    border-radius: .6rem;    
+    box-shadow: .3rem 1rem 1rem rgba(0,0,0,0.2),
+    -.3rem -.5rem .5rem rgba(0,0,0,0.2);    
+    background-color: white;    
+    width: 25rem;
+    text-align: center;
+    height: 35rem;
+    }
+    
+    .song-name{
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+   color: rgba(0,0,0,0.8);  ;
+    
+    }
+
+    .maincont p{
+    font-size: 1.3rem;
+    margin-top: .5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgba(0,0,0,0.2);
+
+    }
+ .song-img{
+
+width: 14rem;
+height: 14rem;
+border-radius: 50%;
+position: relative;
+top: 2rem;
+left: 50%;
+transform: translateX(-50%);
+box-shadow: .3rem 1rem 1rem rgba(0,0,0,0.2),
+-.3rem .5rem .5rem rgba(0,0,0,0.2);    
+
+}
+
+.song-img img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+
+}
+
+.song-img.rot{
+animation: rot 5s linear infinite ;
+}
+
+@keyframes rot{
+0%{
+ transform: translateX(-50%) rotate(0) ;
+
+}
+
+100%{
+    transform: translateX(-50%) rotate(360deg) ;
+
+}
+
+}
+
+.progress-div{
+    position: relative;
+    box-sizing: border-box; 
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.start-time{
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.end-time{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.progress-bar{
+    position: relative;
+    margin-top: 1rem;
+    background-color: whitesmoke;
+    width: 100%;
+    height: .5rem;
+    border-radius: 5px
+   
+    
+
+}
+
+.progress{
+width: 0%;
+height: 100%;
+background-color: lightblue;
+position: absolute;
+top: 0;
+left: 0;
+border-radius: 5px;
+
+
+}
+
+
+
+
+.butdiv{    
+position: absolute;
+bottom: 0rem;
+left: 10%;
+width: 80%;
+height: 6rem;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+i.fa{
+  font-size: 2rem;
+  
+    
+}
+
+.music{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(0,0,0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  
+
+}
+
+.play i.fa-pause{
+    display: block;
+}
+
+.play i.fa-play {
+   display: none;
+}
+
+
+i.fa-pause{
+    display: none;
+    font-size: 1.3rem;
+}
+
+i.fa-play {
+    display: block;
+    font-size: 1.3rem;
+ }
+
+ .music:hover{
+background-color: whitesmoke;
+color: black;
+box-shadow: .3rem 1rem 1rem rgba(0,0,0,0.2),
+-.3rem .5rem .5rem rgba(0,0,0,0.2);    
+
+ }

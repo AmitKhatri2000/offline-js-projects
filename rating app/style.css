@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+background-color: teal;
+}
+.maincont{
+    width: fit-content;
+    
+}
+
+h2{
+  font-size: 4rem;
+  padding: 2rem;
+  color: antiquewhite;
+  text-transform: capitalize;
+}
+
+.image{
+    display: grid;
+    place-content: center;
+    position: relative;
+  width: 250px;
+  height: 300px;
+  background-color: aliceblue;  
+  margin: 0 auto;
+  box-shadow: 0 1rem 1rem rgba(0,0,0,0.3) ,
+  0 1rem .5rem rgba(0,0,0,0.3);
+border-radius: .7rem;
+}
+
+.image img{
+ top: 0;   
+border-radius: 0.5rem;
+position: absolute;
+
+}
+
+
+.rate{
+width: fit-content;   
+margin: 0 auto;
+
+}
+
+.rate span{
+    font-size: 4rem;
+    margin-right: .5rem;
+}
+
+.fa{
+    margin: 1.5rem auto;
+    color: white;
+    filter: drop-shadow( 0 0 10px  white);
+    
+    
+}
+
+.click{
+    color: #fdcb6e;
+}
+
+.hover{
+
+    color: yellow;
+}
+
+ .but{
+     width: fit-content;
+     margin: 0 auto;
+ }
+
+ .prebut{
+ margin-right: 1rem;
+display: inline-block;  
+width: 10rem;
+text-align: center;
+padding: .5rem;
+height: 4rem;
+background-color: whitesmoke;
+font-size: 2rem;
+font-weight: 600;
+text-transform: capitalize;
+border: none;
+border-radius: 0.4rem;
+color: teal;
+box-shadow: -.5rem .5rem 1rem rgba(0,0,0,0.3),
+    -.5rem 0.5rem .5rem rgba(0,0,0,0.3);
+    outline-style: none;
+
+}
+
+
+
+.ratebut:active{
+    background-color: rgba(0,0,0,1);
+    
+}
+
+.nextbut{
+    width: 10rem;
+    text-align: center;
+    padding: .5rem;
+    height: 4rem;
+    background-color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 0.4rem;
+    color: teal;
+    display: inline-block;
+    outline-style: none;
+    box-shadow: .5rem .5rem 1rem rgba(0,0,0,0.3),
+    .5rem 0.5rem .5rem rgba(0,0,0,0.3);
+   
+    }
+
+
+    .nextbut:active{
+        background-color: rgba(0,0,0,1);
+        
+    }
+
+    
+.clip{
+    position: relative;
+    background-color: transparent;
+    display: grid;
+    place-items: center;
+     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color:whitesmoke;
+    box-shadow: 1px 1px 5px brown;
+    border-top: 3px solid #fff200;
+     animation: load .5s linear infinite;
+  }
+  .clip h1{
+   
+    animation: loads .5s linear infinite;
+  color: teal;
+  }
+  
+  @keyframes loads{
+    0%{transform: rotate(0deg);}
+    
+      100%{transform: rotate(-360deg);}
+      
+       
+    }
+  
+  
+  @keyframes load{
+  0%{transform: rotate(0deg);}
+  
+    100%{transform: rotate(360deg);}
+    
+     
+  }

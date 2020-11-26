@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+  }
+ ::-webkit-scrollbar-track {
+     background-color: whitesmoke;
+     
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+    
+     background-color: teal;
+     
+     
+ }
+
+body{
+ height: 100vh;   
+ background-color:#1B9CFC ;
+ display: flex;
+ flex-wrap: wrap;
+ 
+
+}
+
+.main{
+ background-color: #b8e994;   
+ width: 200px;
+ height: 300px;
+ position: relative;
+ margin: 20px;
+ 
+ 
+}
+
+.main button{
+    position: absolute;
+    background-color:#b8e994;
+    border: none;
+    color:white;
+    text-transform: capitalize;
+    font-weight: 900;
+    cursor: pointer;
+   
+    outline-style: none;
+}
+
+.edit{
+    right: 25px;
+    padding: 5px;
+}
+
+.delete{
+    right: 2px;
+    padding: 5px;
+}
+
+.main .p{
+position: absolute;
+top: 8px;
+left: 2px;
+text-transform: capitalize;
+font-weight: 900;
+color: #1B9CFC;
+
+
+}
+
+
+
+.submain{
+  background-color: whitesmoke;
+  position: absolute;  
+  top: 30px;
+  width: 100%;
+  height:270px;
+  
+}
+
+.submain textarea{
+    position: absolute;
+    top: 0;
+     width: 100%;
+    height: 100%;
+    border: none;
+    outline-style: none;
+    resize: none;
+    padding: 5px;
+    
+    
+}
+
+.interdiv{
+    width: 100%;
+    height: 100%;
+    word-wrap: break-word;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.para{
+  
+  color:  #1B9CFC;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 15px;
+
+}
+.hidden{
+    display: none;
+}
+
+
+.add{
+width: 100px;
+padding: 5px 2px;
+font-size: 15px;
+font-weight: 500;
+color: white;
+background-color:#b8e994;
+border: none;
+position: fixed;
+top: 10px;
+right: 10px;
+
+}

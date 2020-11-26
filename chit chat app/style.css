@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    color: whitesmoke;
+}
+body{
+background-color: #3d3d3d;
+
+}
+
+.maincont{
+    margin: 0 auto;
+   text-align: center;
+   margin-top: 50px; 
+   background-color:#e1b12c ;
+   border-radius: 4px;
+   width: 500px;
+   
+
+}
+
+.maincont h1{
+    
+    font-size: 60px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    padding: 20px 30px;
+}
+
+.chats{
+    box-sizing: border-box;
+    padding: 10px 5px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    max-height: 250px;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-y: scroll;
+   display: none;
+}
+
+
+
+.chatsul li {
+  
+    
+    position: relative;
+    height: auto;
+    text-align: left;
+    border:1px solid #7ed6df;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    padding: 10px;
+ 
+   
+}
+
+
+.chatsul li h3{
+ display: inline-block;  
+ font-weight: 900;
+ font-size: 18px;
+ color: #2f3640;   
+ text-transform: capitalize;
+ letter-spacing: 1px;
+
+}
+
+.chatsul li p{
+ display: inline-block;
+ width: 100%;
+ margin: 0 auto;
+ font-weight: 500;
+ font-size: 15px;
+ color: #2f3640;   
+ text-transform: capitalize;
+ letter-spacing: 1px;
+ 
+}
+
+.chatsul li span{
+    padding-top: 4px;
+    display: block;
+    color: #2f3640;
+    font-size: 12px;
+     
+}
+
+
+
+.topicon {
+ position: relative;
+  width: 30px;
+  mix-blend-mode: multiply ;
+  left: -45%;
+  top: 10px;
+  transition: transform .2s linear;
+  cursor: pointer;
+}
+
+.topicon:hover{
+    transform: rotate(45deg);
+}
+
+
+
+.middle div {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    text-align: left;
+    width: 100%;
+    background-color:#7ed6df ;
+    padding: 5px;
+    cursor: pointer;
+   
+}
+.middle div p {
+    color: #2f3640;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.middle div img{
+    position: absolute;
+    transform: scale(.4) ;
+    top: -30%;
+    right: 0px;
+    transition: transform .2s linear;
+
+}
+
+
+
+
+.chatroomul{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+  
+    
+}
+.chatroomul li{
+font-weight: 900;
+letter-spacing: 3px;
+padding: 10px 20px;
+margin-bottom: 5px;
+background-color: #EAB543;
+cursor: pointer;
+
+
+
+}
+ .active{
+    display: block;
+}
+
+.icondiv.active img{
+transform: scale(.4) rotate(180deg);
+
+}
+
+.message{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icon:hover{
+    transform: scale(.5);
+} 
+
+.firstform{
+    
+    display: flex;
+    justify-content: center;
+}
+.firstform label{
+    background-color: #ff793f;
+    padding: 10px 5px ;
+    border-radius: 4px 0 0 4px;
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 120px;
+}
+
+.firstform input{
+    border: none;
+    width:  55%;
+    outline-style: none;
+    color: black;
+    padding: 0 5px;
+
+}
+
+.firstform button{
+    border: none;
+    background-color: #ff793f;
+    width: 80px;
+      font-size: 20px;
+    text-transform: capitalize;
+    border-radius:  0 4px 4px 0;
+    outline-style: none;
+    cursor: pointer;
+}
+.update{
+    display: none;
+    padding-bottom: 15px;
+}
+
+.secform{
+   display: flex;
+    justify-content: center;
+   }
+
+.secform label{
+    background-color: #ff793f;
+    padding: 10px 5px ;
+    border-radius: 4px 0 0 4px;
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 120px;
+}
+
+.secform input{
+    border: none;
+    width:  55%;
+    outline-style: none;
+    color: black;
+    padding: 0 5px;
+
+}
+
+.secform button{
+    border: none;
+    cursor: pointer;
+    background-color:  #ff793f;
+    width: 80px;
+    outline-style: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius:  0 4px 4px 0;
+}
+
+
+
+.upactive{
+    display: block;
+}

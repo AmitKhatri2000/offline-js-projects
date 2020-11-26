@@ -1,0 +1,115 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: arial;
+
+}
+
+body{
+  background-color:  #090909;
+}
+
+.pop{
+position:relative;
+top: 200px;
+width: fit-content;
+margin: 0px auto;
+text-align: center;
+
+
+
+}
+
+.log{
+position: relative;
+top: -40px;
+background-color: #DECBD1;
+padding: 10px;
+width: 500px;
+margin: 0 auto;
+border-radius: 5px;
+
+}
+
+.cross{
+width: 20px;
+border-radius: 50%;
+background-color: #283747;
+color: white;
+}
+
+.input h3{
+font-size: 40px;
+text-transform: capitalize;
+padding: 10px;
+
+}
+
+.input p{
+
+  text-transform: capitalize;
+  padding: 10px;
+  font-weight: 500;
+
+}
+
+.input input{
+  margin-top: 10px;
+  border: 1px solid royalblue;
+border-radius: 8px 0px 0px 8px;
+padding: 15px;
+margin-bottom: 20px;
+
+
+
+}
+
+.input button{
+padding: 15px;
+border: 1px solid royalblue;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #283747;
+  color: white;
+  margin-left: -5px;
+  margin-bottom: 20px;
+}
+
+
+.log{
+top: -590px;
+animation: drop 2s   ease-out forwards, swing 5s 3s ease forwards ;
+transform-origin: 10px 10px;
+
+}
+
+.pop img{
+  animation: hide 2s  linear forwards;
+
+  }
+
+
+@keyframes drop {
+  0%{ opacity: 0;  }
+  70%{ transform: translateY(600px); }
+  100%{ transform: translateY(550px); opacity: 1;}
+}
+
+@keyframes swing {
+  0%{ transform: translateY(550px)  rotateZ(0deg); }
+  40%{ transform: translateY(550px) rotateZ(90deg); }
+  70%{ transform: translateY(550px) rotateZ(40deg); }
+  100%{ transform: translateY(550px) rotateZ(75deg);}
+}
+
+@keyframes hide {
+  0%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+opacity: 1;
+
+  }
+}

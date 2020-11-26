@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .5px;
+    outline-color: #81ecec;
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+
+body{
+height: 100vh;
+background-color:whitesmoke;
+background-image: url(light.jpg);
+background-size: cover;
+display: grid;
+place-items: center;
+
+}
+
+::placeholder {
+  opacity: .5;
+  }
+
+
+.back-img{
+  
+width: 100%;
+height: 100%;
+
+}
+.back-img img{
+    width: 100%;
+    height: 100%;
+    
+filter: blur(1px);
+-webkit-filter: blur(1px);
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.maincont{
+
+
+width: 35rem;
+height: 45rem;
+background-color: white;
+border-radius: .7rem;
+}
+
+.head{
+    border-radius: .5rem .5rem  0  0;
+    height: 5rem;
+    background-image: linear-gradient( to right, #81ecec 30% ,  #00cec9);
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    color: whitesmoke;
+}
+.formdiv{
+  width: 100%;
+  
+}
+
+.formdiv div{
+margin-top: 1.7rem;
+position: relative;
+  
+}
+
+.formdiv label{
+    display: inline-block;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding-left: 3rem;
+    padding-bottom: .2rem;
+    color:  #00c5c9;
+   
+
+   }
+
+ 
+
+   .fa-check-circle {
+    transform: scale(1.4);
+     color: lightgreen;
+     position: absolute;
+     top: 2.4rem;
+     right: 4rem;
+     visibility: hidden;
+     
+  }  
+ 
+ .fa-exclamation-circle{
+     transform: scale(1.4);
+     color: lightcoral;
+     position: absolute;
+     top: 2.4rem;
+     right: 4rem;
+    visibility: hidden;
+ 
+ }
+
+.divs.err input{
+    border: .5px solid crimson;
+
+}
+
+.divs.pass input{
+    border: .5px solid lightgreen;
+
+}
+
+
+
+ .divs.err i.fa-exclamation-circle {
+  transform: scale(1.4);
+  color: lightcoral;
+   position: absolute;
+   top: 2.4rem;
+   right: 4rem;
+   visibility: visible;
+  }
+
+
+  .divs.pass i.fa-check-circle {
+    transform: scale(1.4);
+     color: lightgreen;
+     position: absolute;
+     top: 2.4rem;
+     right: 4rem;
+     visibility: visible;
+    }
+ 
+
+.formdiv p{
+padding-left: 3.1rem;
+font-size: 1rem;
+text-transform: capitalize;
+color:crimson;
+padding-top: .3rem;
+letter-spacing: 1.2px;
+}   
+
+.formdiv input{
+    display: block;
+    border: .5px solid rgba(0, 206, 201,1);
+    border-radius:3px;
+    width: 80%;
+    height: 2.5rem;
+    margin: 0 auto;
+    padding-left: .5rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, .5);
+}
+
+.submit{
+width: 80%;
+display: block;
+margin:  2rem auto;
+height: 3rem;
+border: none;
+border-radius: .5rem;
+background-image: linear-gradient( to left, #81ecec 30% ,  #00cec9);
+color: whitesmoke;
+font-size: 1.5rem;
+text-transform: capitalize;
+letter-spacing: 1px;
+
+}
+
+.success{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+
+
+.msg i.fa-check-circle {
+     position: absolute;
+     color: lightgreen;
+     top: 2.5rem;
+     right: 50%;
+     transform: translateX(-50%) scale(6);
+     visibility: visible;
+    }
+ 
+
+.msg{
+    border-radius: .5rem;
+   position: relative;
+    background-color: whitesmoke;
+    width: 30rem;
+    height: 20rem;
+}
+
+.msg h2{
+ position: absolute;
+ display: inline-block;
+ top: 40%;
+ left: 50%;
+ transform: translate(-50% , -50%);
+ font-size: 3rem;
+ color: lightgreen; 
+ font-weight: 800;
+ text-transform: capitalize; 
+
+}
+
+.msg p{
+width: fit-content;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 1.3rem;
+    color: lightgreen; 
+    font-weight: 800;
+    text-transform: capitalize; 
+
+}
+
+.msg button{
+width: 10rem;
+border: none;
+background-color: lightgreen;
+color: white;
+height: 2.5rem;
+position: absolute;
+    display:inline-block;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: .2rem;
+
+
+}
+
+.msg span{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 1.7rem;
+    color: lightgreen; 
+    font-weight: 800;
+    text-transform: capitalize;
+
+}
+
+
+.success.hide{
+    display: none;
+}

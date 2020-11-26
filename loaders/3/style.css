@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  
+}
+
+
+body {
+  height: 100vh;
+  background-color:black; 
+  display: grid;
+  place-items: center;
+  
+}
+
+.clip{
+  position: relative;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+   width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color:whitesmoke;
+  box-shadow: 1px 1px 5px brown;
+  border-top: 3px solid #fff200;
+   animation: load .5s linear infinite;
+}
+.clip h1{
+  
+  animation: loads .5s linear infinite;
+  color:whitesmoke;
+}
+
+@keyframes loads{
+  0%{transform: rotate(0deg);}
+  
+    100%{transform: rotate(-360deg);}
+    
+     
+  }
+
+
+@keyframes load{
+0%{transform: rotate(0deg);}
+
+  100%{transform: rotate(360deg);}
+  
+   
+}

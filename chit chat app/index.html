@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+ <div class="maincont">
+  <div >
+    <img  class="topicon" src="setting.png" >
+  </div>
+ <h1>chitchat</h1> 
+ <div class="middle">
+   <div class="icondiv"> <p>slect a chatroom</p> 
+  <img class="icon" src="Down.png" >  </div>
+   <ul class="chatroomul">
+    <li>general</li> 
+    <li>gamming</li> 
+    <li>music</li> 
+    <li>ninja</li> 
+   </ul> 
+ </div>
+<div  class="chats">
+  <ul class="chatsul">
+ 
+  </ul>
+</div>
+  <div class="message">
+    
+  <form class="firstform">
+    <label> your message</label>
+  <input type="text" name="message">
+  <button>send</button>
+  </form>
+  </div>
+  <div class="update">
+    
+    <form class="secform">
+      <label> update name</label>
+    <input  type="text" name="name"> 
+    <button> update </button>
+    </form> 
+  </div> 
+  </div>
+  <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+<script>
+   var firebaseConfig = {
+    apiKey: "AIzaSyAIyhVrgFJbo8qF2kA_NmtCBEluTf1lOuc",
+    authDomain: "learnjava-d407a.firebaseapp.com",
+    databaseURL: "https://learnjava-d407a.firebaseio.com",
+    projectId: "learnjava-d407a",
+    storageBucket: "learnjava-d407a.appspot.com",
+    messagingSenderId: "785800785470",
+    appId: "1:785800785470:web:c34a474277d858ed016b6f",
+    measurementId: "G-3LSPB1BR0V"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const fire = firebase.firestore();
+ </script>
+<script src="css.js"></script> 
+<script src="chat.js"></script>
+
+</body>
+</html>
